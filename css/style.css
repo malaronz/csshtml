@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: honeydew;
+    background: url(https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRKd8YPt114B1tLiFosPi26gKV9ilRqAHFyp-klvX_AcIAizrWCiUlpbxwg1Fi5wD04) bottom no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color:rgb(255, 111, 212);
+    font-size: 4rem;
+    -webkit-text-stroke: 2px rgb(184, 77, 152);
+    font-weight: 900;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+footer .links {
+    margin-bottom: 50px;
+}
+
+footer .links > a {
+    color:rgb(70, 175, 255);
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.copyright {
+    color: rgb(108, 117, 125);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.news {
+    background-image: url(https://media.istockphoto.com/id/1291503765/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%80%D0%BE%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9-defocused-%D1%80%D0%B0%D0%B7%D0%BC%D1%8B%D1%82%D0%BE%D0%B5-%D0%B4%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B0%D0%B1%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%82%D0%BD%D1%8B%D0%B9-%D1%84%D0%BE%D0%BD.jpg?s=612x612&w=0&k=20&c=4T2ZQkZ5dEq2QGwIAVWwMl31nHRMRNlkE7Unn18aIB4=);
+    /* background-color: #fff; */
+    background-size: cover;
+    padding: 50px 0 32px;
+}
+
+article {
+    width: 768px;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid rgb(161, 70, 134)
+}
+article a {
+    color: khaki;
+    text-decoration: none;
+}
+
+article a:hoover {
+    color: coral;
+}
+
+article h2 {
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+
+.article-meta {
+    color: dimgray;
+    margin-bottom: 5px;
+}
+article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+/* Задаем цвет фона каждой второй (четной) новости */
+article:nth-child(even) {
+    background-color: rgb(162, 0, 95); /* Замените на желаемый цвет фона */
+}
+
+/* Добавляем слово "New" к заголовкам первых двух новостей */
+article:nth-child(-n+2) h2::before {
+    content: "New ";
+    color: rgb(144, 255, 144); /* Замените на желаемый цвет текста */
+}
